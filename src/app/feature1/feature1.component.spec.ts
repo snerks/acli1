@@ -21,7 +21,7 @@ describe('Component: Feature1', () => {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([Feature1Component, StringcalculatorService],
+  it('should inject the component', inject([Feature1Component],
       (component: Feature1Component) => {
     expect(component).toBeTruthy();
   }));
