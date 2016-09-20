@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <p>
+      String Calculator
+    </p>
+
+    <div>
+      <textarea [(ngModel)]="numbers"></textarea>
+    </div>
+
+    <div>
+      <button (click)="doadd()">Add</button>
+    </div>
+
+    <div style="padding-top: 30px;">
+      {{addResult}}
+    </div>
+  </div>
+</div>
+
