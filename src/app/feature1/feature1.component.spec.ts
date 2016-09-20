@@ -9,17 +9,19 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
+
 import { Feature1Component } from './feature1.component';
+import { StringcalculatorService } from '../stringcalculator.service';
 
 describe('Component: Feature1', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [Feature1Component]);
+  beforeEachProviders(() => [Feature1Component, StringcalculatorService]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([Feature1Component],
+  it('should inject the component', inject([Feature1Component, StringcalculatorService],
       (component: Feature1Component) => {
     expect(component).toBeTruthy();
   }));

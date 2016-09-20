@@ -28,6 +28,18 @@ describe('Stringcalculator Service', () => {
           expect(result).toBe(0);
     }));
 
+    it('should return 0 for "0"',
+        inject([StringcalculatorService], (service: StringcalculatorService) => {
+
+          // arrange
+
+          // act
+          const result: number = service.add('0');
+
+          // assert
+          expect(result).toBe(0);
+    }));
+
     it('should return 1 for "1"',
         inject([StringcalculatorService], (service: StringcalculatorService) => {
 

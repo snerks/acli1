@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { Feature1Component } from './feature1';
 
 @Component({
